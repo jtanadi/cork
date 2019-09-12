@@ -14,7 +14,7 @@ This project is mainly an excuse to review and practice concepts covered in clas
 That's it for now, but a wireframe could be helpful.
 
 ## Initial Project Guidelines
-In general, start small and simple—we can always complexify the project as we move forward. This may not be the most efficient way of building something from scratch, but that's not really the point. (And this actually sounds closer to working as an engineer IRL.)
+In general, start small and simple—we can always complexify the project as we move forward. This may not be the most efficient way of building something from scratch, but that's not really the point. 
 
 Below are some initial guidelines and goals, separated by categories.
 
