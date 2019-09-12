@@ -6,9 +6,10 @@ This project is mainly an excuse to review and practice concepts covered in clas
 ## Basic App Functionality
 - The main feature of this app is the main page that shows a grid of excerpted posts (like a bulletin board...).
     - Clicking on a post excerpt will show it in full
-    - If user is author of post, they are able to edit and delete it
+    - If user is author of post, they are able to edit or delete it
 - On the main page, user can add a new post.
-    - User clicks on a button, which will bring them to a "compose post" page
+    - User clicks on a button, which will bring them to a "compose post" page (like any other apps of this kind)
+- A post consists of a subject line and the main content (all text only for now)
 
 That's it for now, but a wireframe could be helpful.
 
