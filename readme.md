@@ -3,21 +3,21 @@ Cork is a simple bulletin board web app.
 
 This project is mainly an excuse to review and practice concepts covered in class and learn about best practices when collaborating with other developers (eg. more in-depth use of `git`, GitHub features, posting issues, etc.). Hopefully we end up with a decent app while learning about the practice of software engineering as a whole (more or less).
 
+## Basic App Functionality
+- The main feature of this app is the main page that shows a grid of excerpted posts (like a bulletin board...).
+    - Clicking on a post excerpt will show it in full
+    - If user is author of post, they are able to edit and delete it
+- On the main page, user can add a new post.
+    - User clicks on a button, which will bring them to a "compose post" page
+
+That's it for now, but a wireframe could be helpful.
+
 ## Initial Project Guidelines
 In general, start small and simple—we can always complexify the project as we move forward. This may not be the most efficient way of building something from scratch, but that's not really the point. (And this actually sounds closer to working as an engineer IRL.)
 
 Below are some initial guidelines and goals, separated by categories.
 
-### App Features
-- Start with the most basic features
-    - For example: start with one user, who is able to perform basic CRUD operations on posts
-- Some additional features to consider moving forward:
-    - Having multiple users
-    - Using OAuth to sign up / login
-    - Allow user comments
-    - Allow posts to expire
-
-### Working / Collaborating
+### General Working / Collaborating
 - Open the project to whoever is interested
 - This project is meant to be a way to review and get better at materials covered in class, so try to write everything from scratch
     - Try not to copy-paste or rewrite code from previous workshops or lectures
@@ -39,6 +39,16 @@ Below are some initial guidelines and goals, separated by categories.
     - Github hooks if feeling fancy
 - TDD!
     - Try to write at least one test per feature added or bug fixed
+
+### Developing Features
+- Start with the most basic features, and elaborate on them after all the basics are in place
+    - For example: start with one user, who is able to perform basic CRUD operations on posts, then look into having multiple users
+- Some additional features to consider moving forward:
+    - Having multiple users
+    - Adding tags to posts so they can be categorized
+    - Using OAuth to sign up / login
+    - Allow user comments
+    - Allow posts to expire
 
 ### Tech Stack
 - Start with the same basic tech stack as covered in class
