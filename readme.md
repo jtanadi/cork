@@ -33,12 +33,13 @@ Below are some initial guidelines and goals, separated by categories.
     - Fork from main repo
     - Don't commit to `master`
 - Learn about and use Github features not typically covered in workshops
-    - Post questions and bugs on Github's Issues
+    - Post questions and bugs on Github Issues
         - In addition to making these things trackable, we would potentially end up with a library of Q&A's
     - PRs to review code before merging
-        - Code reviews!
+        - Code reviews would be amazing!
     - Github hooks if feeling fancy
 - TDD!
+    - Would be great if we're kind of "pure" about this (write tests first, fail them, then write code to get those tests to pass), but that may not be realistic, so just write tests.
     - Try to write at least one test per feature added or bug fixed
 
 ### Developing Features
