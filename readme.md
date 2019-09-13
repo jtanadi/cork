@@ -11,7 +11,7 @@ This project is mainly an excuse to review and practice concepts covered in clas
     - User clicks on a button, which will bring them to a "compose post" page (like any other apps of this kind)
 - A post consists of a subject line and the main content (all text only for now)
 
-That's it for now, but a wireframe could be helpful.
+For a basic wireframe, check out [wireframes.pdf](https://github.com/jtanadi/cork/blob/master/wireframes.pdf)
 
 ## Contributing
 Contributing guidelines [can be found here](https://github.com/jtanadi/cork/blob/master/contributing.md)
