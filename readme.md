@@ -13,10 +13,10 @@ This project is mainly an excuse to review and practice concepts covered in clas
 
 That's it for now, but a wireframe could be helpful.
 
+## Contributing
+Contributing guidelines [can be found here](https://github.com/jtanadi/cork/blob/master/contributing.md)
+
 ## Initial Project Guidelines
 In general, start small and simple—we can always complexify the project as we move forward. This may not be the most efficient way of building something from scratch, but that's not really the point. 
 
 Guidelines by categories are now in [a separate file](https://github.com/jtanadi/cork/blob/master/guidelines.md)
-
-## Contributing
-Contributing guidelines [can be found here](https://github.com/jtanadi/cork/blob/master/contributing.md)
