@@ -11,14 +11,21 @@ or with SSH:
 $ git clone git@github.com:jtanadi/cork.git
 ```
 
-## Pull
+## Issues
+If you have a question, are stuck with something, or ran into a bug, post about it in the [Issues page](https://github.com/jtanadi/cork/issues).
+
+Of course the slack channel is open for questions, comments, etc., but for anything that needs to be persistent, posting an issue would be good. Hopefully in the end we'll also have a library of Q&A's for future projects.
+
+## `git` stuff
+
+### Pull
 **Remember to `pull` before you start working**, that way everything that's up on Github will end up in your computer, and we don't run into merge conflicts.
 
 ```
 $ git pull
 ```
 
-## Branching
+### Branching
 When working on a new feature or bug, start a new branch:
 ```
 $ git checkout -b branch_name
@@ -37,7 +44,7 @@ $ git checkout branch_name
 ```
 
 
-### Naming Branches
+#### Naming Branches
 Not a huge deal for now, but it would be nice to label branches appropriately.
 
 For example, if you're fixing issue #138, name your branch like so:
@@ -50,5 +57,5 @@ Or adding a feature
 $ git checkout -b add_larger_header
 ```
 
-## Push
+### Push
 Don't push to `master`. Ellaborate on this later...
