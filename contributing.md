@@ -43,6 +43,10 @@ To switch to an already-made branch, use:
 $ git checkout branch_name
 ```
 
+If you create a new branch, the first time you `push`, you also have to `--set-upstream` (or use the `-u` flag):
+```
+$ git push -u origin branch_name
+```
 
 #### Naming Branches
 Not a huge deal for now, but it would be nice to label branches appropriately.
