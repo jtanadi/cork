@@ -20,7 +20,7 @@ const User = connection.define("user", {
       isEmail: true,
     },
   },
-  isAdmin: {
+  admin: {
     type: BOOLEAN,
     defaultValue: false
   }
