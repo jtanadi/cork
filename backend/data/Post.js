@@ -7,7 +7,7 @@ const Post = connection.define("post", {
   id: idDef,
   title: {
     type: STRING,
-    allowNull: true,
+    defaultValue: "[no subject]"
   },
   body: {
     type: TEXT,
