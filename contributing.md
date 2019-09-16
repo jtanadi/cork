@@ -89,7 +89,7 @@ So let's say you are adding a new feature. The basic steps are:
 - When you're done, open a PR to have that feature merged to `dev`
 
 ```
-$ git branch develop
+$ git checkout dev
 $ git checkout -b add_rounded_buttons
 
 ... code code code ...
