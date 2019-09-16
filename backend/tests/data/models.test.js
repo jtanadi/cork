@@ -1,6 +1,6 @@
 const { expect } = require("chai")
 
-const db = require("../index")
+const db = require("../../src/data")
 const { User, Post } = db.models
 
 describe("Test models", () => {
