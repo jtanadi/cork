@@ -14,7 +14,7 @@ describe("Post model", () => {
     // const post = Post.build({ body: "Here's my second post!", title: "" })
     // expect(post.title).to.equal("[no subject]")
 
-    await db.connection.sync({ force: true })
+    await db.connection.sync()
     await Post.create({ title: "", body: "Here's my second post!" })
       .then(post => expect(post.title).to.equal("[no subject]"))
   })
