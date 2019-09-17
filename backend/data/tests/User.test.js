@@ -29,11 +29,11 @@ describe("User model", () => {
     const admin = User.build({
       name: "admin",
       email: "email@address.com",
-      admin: true,
+      isAdmin: true,
     })
     expect(admin.name).to.equal("admin")
     expect(admin.id).to.not.equal(null)
-    expect(admin.admin).to.be.ok
+    expect(admin.isAdmin).to.be.ok
   })
 
   it("is not admin by default", () => {
@@ -41,6 +41,6 @@ describe("User model", () => {
       name: "joe",
       email: "joe@shmoe.org"
     })
-    expect(user.admin).to.equal(false)
+    expect(user.isAdmin).to.equal(false)
   })
 })
