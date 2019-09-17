@@ -4,8 +4,8 @@
   "description": "Cork is a simple bulletin board web app.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha \"./**/*.test.js\"",
-    "test:watch": "mocha \"./**/*.test.js\" --watch "
+    "test": "DATABASE_URL=postgres://localhost/cork_test_db mocha \"./**/*.test.js\"",
+    "test:watch": "DATABASE_URL=postgres://localhost/cork_test_db mocha \"./**/*.test.js\" --watch "
   },
   "repository": {
     "type": "git",
