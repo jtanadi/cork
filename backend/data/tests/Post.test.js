@@ -4,9 +4,19 @@ const db = require("../index")
 const { User, Post } = db.models
 
 describe("Post model", () => {
-  it("has a default title of '[no subject]'", () => {
+  it("has a default title of '[no subject]' when nothing is passed in", () => {
     const post = Post.build({ body: "Here's my first post!" })
     expect(post.title).to.equal("[no subject]")
+  })
+
+  it("has a default title of '[no subject]' when an empty string is passed in", async () => {
+    // Somehow can't use the `build()` method for this test
+    // const post = Post.build({ body: "Here's my second post!", title: "" })
+    // expect(post.title).to.equal("[no subject]")
+
+    await db.connection.sync({ force: true })
+    await Post.create({ title: "", body: "Here's my second post!" })
+      .then(post => expect(post.title).to.equal("[no subject]"))
   })
 
   it("has all data passed in by user", () => {
