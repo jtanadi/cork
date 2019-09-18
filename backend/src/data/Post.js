@@ -7,7 +7,11 @@ const Post = connection.define("post", {
   id: idDef,
   title: {
     type: STRING,
-    defaultValue: "[no subject]"
+    defaultValue: "[no subject]",
+    allowNull: false,
+    validate: {
+      notEmpty: true,
+    }
   },
   body: {
     type: TEXT,
@@ -15,6 +19,14 @@ const Post = connection.define("post", {
     validate: {
       notEmpty: true,
     },
+  }
+}, {
+  hooks: {
+    beforeValidate: (post) => {
+      if (!post.title) {
+        post.set("title", "[no subject]")
+      }
+    }
   }
 })
 
