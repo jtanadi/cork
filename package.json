@@ -18,10 +18,12 @@
     "url": "https://github.com/jtanadi/cork/issues"
   },
   "homepage": "https://github.com/jtanadi/cork#readme",
-  "devDependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^6.2.0",
+  "dependencies": {
     "pg": "^7.12.1",
     "sequelize": "^5.18.4"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0"
   }
 }
