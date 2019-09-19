@@ -11,12 +11,12 @@ This project is mainly an excuse to review and practice concepts covered in clas
     - User clicks on a button, which will bring them to a "compose post" page (like any other apps of this kind)
 - A post consists of a subject line and the main content (all text only for now)
 
-For a basic wireframe, check out [wireframes.pdf](https://github.com/jtanadi/cork/blob/master/wireframes.pdf)
+For a basic wireframe, check out [wireframes.pdf](https://github.com/jtanadi/cork/blob/dev/wireframes.pdf)
 
 ## Contributing
-Contributing guidelines [can be found here](https://github.com/jtanadi/cork/blob/master/contributing.md)
+Contributing guidelines [can be found here](https://github.com/jtanadi/cork/blob/dev/contributing.md)
 
 ## Initial Project Guidelines
 In general, start small and simple—we can always complexify the project as we move forward. This may not be the most efficient way of building something from scratch, but that's not really the point. 
 
-Guidelines by categories are now in [a separate file](https://github.com/jtanadi/cork/blob/master/guidelines.md)
+Guidelines by categories are now in [a separate file](https://github.com/jtanadi/cork/blob/dev/guidelines.md)
