@@ -1,6 +1,3 @@
-// disable eslint for now
-/* eslint-disable */
-
 const { expect } = require("chai");
 const supertest = require("supertest");
 const app = supertest(require("../src/app"));
