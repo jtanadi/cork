@@ -2,6 +2,13 @@ const { expect } = require("chai");
 const supertest = require("supertest");
 const app = supertest(require("../src/app"));
 
+const syncAndSeed = require("../src/data/syncAndSeed");
+
+let obj;
+before(async () => {
+  obj = await syncAndSeed();
+});
+
 describe("/api/users endpoint", () => {
   it("has GET endpoint", () => {
     return app
@@ -16,7 +23,8 @@ describe("/api/users endpoint", () => {
 describe("/api/users/:id/posts endpoint", () => {
   let postsEndpoint;
   before(async () => {
-    const { userId } = await app.get("/api/users")[0];
+    const users = (await app.get("/api/users")).body;
+    const userId = users[0].id;
     postsEndpoint = `/api/users/${userId}/posts`;
   });
 
@@ -31,15 +39,15 @@ describe("/api/users/:id/posts endpoint", () => {
 
   it("has POST endpoint", () => {
     const postTitle = "My First Post";
-    const postText = "Welcome to my first post!";
+    const postBody = "Welcome to my first post!";
     return app
       .post(postsEndpoint)
-      .send({ title: postTitle, text: postText })
+      .send({ title: postTitle, body: postBody })
       .expect(201)
       .then(response => {
-        const { title, text } = response.body;
+        const { title, body } = response.body;
         expect(title).to.equal(postTitle);
-        expect(text).to.equal(postText);
+        expect(body).to.equal(postBody);
       });
   });
 });
