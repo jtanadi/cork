@@ -7,13 +7,15 @@
     "test": "DATABASE_URL=postgres://localhost/cork_test_db mocha --recursive \"./backend/**/*.test.js\"",
     "test:watch": "DATABASE_URL=postgres://localhost/cork_test_db mocha --recursive --watch \"./backend/**/*.test.js\""
   },
+  "babel": {
+    "presets": [
+      "@babel/react"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jtanadi/cork.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/jtanadi/cork/issues"
   },
