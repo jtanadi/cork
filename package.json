@@ -4,8 +4,8 @@
   "description": "Cork is a simple bulletin board web app.",
   "main": "index.js",
   "scripts": {
-    "test": "DATABASE_URL=postgres://localhost/cork_test_db mocha \"./**/*.test.js\"",
-    "test:watch": "DATABASE_URL=postgres://localhost/cork_test_db mocha \"./**/*.test.js\" --watch "
+    "test": "DATABASE_URL=postgres://localhost/cork_test_db mocha --recursive \"./backend/**/*.test.js\"",
+    "test:watch": "DATABASE_URL=postgres://localhost/cork_test_db mocha --recursive --watch \"./backend/**/*.test.js\""
   },
   "repository": {
     "type": "git",
@@ -18,10 +18,28 @@
     "url": "https://github.com/jtanadi/cork/issues"
   },
   "homepage": "https://github.com/jtanadi/cork#readme",
-  "devDependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^6.2.0",
+  "dependencies": {
+    "express": "^4.17.1",
     "pg": "^7.12.1",
     "sequelize": "^5.18.4"
+  },
+  "devDependencies": {
+    "axios": "^0.19.0",
+    "babel": "^6.23.0",
+    "chai": "^4.2.0",
+    "eslint": "^6.4.0",
+    "faker": "^4.1.0",
+    "mocha": "^6.2.0",
+    "nodemon": "^1.19.2",
+    "prettier": "^1.18.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-redux": "^7.1.1",
+    "react-router-dom": "^5.0.1",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0",
+    "sequelize-cli": "^5.5.1",
+    "supertest": "^4.0.2",
+    "webpack": "^4.40.2"
   }
 }
