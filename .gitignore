@@ -1,3 +1,3 @@
 *.swp
-dist/
+frontend/assets/*.js
 node_modules/
