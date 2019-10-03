@@ -4,6 +4,7 @@ import { HashRouter, Route, Switch } from "react-router-dom";
 
 import actions from "../store/actions";
 import Home from "./Home";
+import PostSingle from "./PostSingle";
 
 /*
 App Routes
@@ -22,6 +23,7 @@ class App extends Component {
     return (
       <HashRouter>
         <Route exact path="/" component={Home} />
+        <Route path="/post/:id" component={PostSingle} />
       </HashRouter>
     );
   }
