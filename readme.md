@@ -16,6 +16,57 @@ For a basic wireframe, check out [wireframes.pdf](https://github.com/jtanadi/cor
 ## Contributing
 Contributing guidelines [can be found here](https://github.com/jtanadi/cork/blob/dev/contributing.md)
 
+## Back End Overview
+### Data Models
+Currently there are two data models (ie. tables), `User` and `Post`. Their rows / properties are listed below.
+
+#### User
+- `id`: UUID v4
+- `name`: String
+    - must not be `null` or empty
+- `email`: String
+    - validation: must be valid email
+- `isAdmin`: Boolean
+    - defaults to `false`
+
+#### Post
+- `id`: UUID v4
+- `title`: String
+    - defaults to `"[no subject]"`
+- `body`: Text
+    - must not be `null` or empty
+
+### API Endpoints
+#### Users
+- `GET /api/users` returns all users
+- `GET /api/users/:id` returns user with matching `id`
+    - *NOT IMPLEMENTED YET*
+- `POST /api/users` creates a user
+    - *NOT IMPLEMENTED YET*
+    - A user object will need to be passed in as the request body: `{ name: "FirstName LastName", email: "user@email.com" }`
+    - To create an admin, set the `isAdmin` property to `true`: `{ name: "Boss", email: "boss@company.com", isAdmin: true }`
+    - The new user will be returned
+- `PUT /api/users/:id` updates the user
+    - *NOT IMPLEMENTED YET*
+    - An object containing the property to be updated will need to be passed in as the request body: `{ isAdmin: false }`
+    - The updated user will be returned
+- `DELETE /api/users/:id` deletes the user
+    - *NOT IMPLEMENTED YET*
+
+#### Posts
+- `GET /api/users/:id/posts` returns all posts from that user
+- `GET /api/users/:id/posts/:postId` returns post with matching `id`
+    - *NOT IMPLEMENTED YET*
+- `POST /api/users/:id/posts` creates a post for that user
+    - A post object will need to be passed in as the request body: `{ title: "New Post Title", body: "Body text for this post" }`
+    - The new post will be returned
+- `PUT /api/users/:id/posts/:postId` updates the post
+    - *NOT IMPLEMENTED YET*
+    - An object containing the property to be updated will need to be passed in as the request body: `{ title: "Updated title" }`
+    - The updated post will be returned
+- `DELETE /api/users/:id/posts/:postId` deletes the post
+    - *NOT IMPLEMENTED YET*
+
 ## Initial Project Guidelines
 In general, start small and simple—we can always complexify the project as we move forward. This may not be the most efficient way of building something from scratch, but that's not really the point. 
 
